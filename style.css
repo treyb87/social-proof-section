@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
+    background-size: cover;
+    font-family:League Spartan ;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.top-container{
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+}
+.top-left{
+    text-align: center;
+    margin-top: 2em;
+
+}
+.heading{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+.description{
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    line-height: 1.25em;
+    font-size: 1.15em;
+}
+.top-right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.star-container{
+    width: 80%;
+    margin: 1em;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    justify-content: center;
+    padding: .75em;
+    font-size: 1em;
+    font-weight: 700;
+    color:hsl(300, 43%, 22%) ;
+    padding-bottom: 0;
+}
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 50px; */
+    
+
+}
+
+.cards{
+    background-color: hsl(300, 43%, 22%);
+    align-items: center;
+    margin: 1em;
+    border-radius: 10px;
+    width: 350px;
+}
+.card-top{
+    margin: 2em 2em;
+    display: flex;
+    align-items: center;
+
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+.name{
+    margin: 1em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: white;
+    font-weight: 500;
+}
+.verified-buyer{
+    margin-left: 1em;
+    padding-top: 0;
+    color: hsla(333, 80%, 67%, .7);
+}
+.testimonials{
+    margin: 2em;
+    color: white;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+@media screen and (min-width: 600px){
+   .top-container{
+    flex-direction: row;
+    justify-content: space-evenly;
+   }
+
+   .top-left{
+    max-width: 450px;
+    margin-left: 75px;
+   }
+   
+   .top-right{
+    /* max-width: 400px; */
+    justify-self: end;
+    width: 100%;
+    margin-top: 50px;
+    /* border: 2px solid black; */
+   }
+   .star-container{
+    max-width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    /* border: 2px solid pink; */
+   
+    
+   }
+
+   .bottom-container{
+    flex-direction: row;
+   
+   }
+   .card1{
+    margin-top: -3em;
+   }
+   .card2{
+    margin-top: 0;
+   }
+   .card3{
+    margin-top: 3em;
+   }
+   .star{
+    width: 18px;
+    margin: 8px;
+    height: 18px;
+   }
+   .star2{
+    margin-left: 85px;
+   }
+   .star3{
+    margin-left: 170px;
+   }
+   
+    
+
